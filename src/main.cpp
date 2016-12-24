@@ -1015,7 +1015,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 }
 
 // miner's coin stake reward based on coin age spent (coin-days)
-const int YEARLY_BLOCKCOUNT = 131400; //1314000 block will execute with in 6months
+const int YEARLY_BLOCKCOUNT = 131400; //131400 block will execute with in 6months
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
     //CBlockLocator locator;
