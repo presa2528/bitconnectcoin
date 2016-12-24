@@ -1025,15 +1025,15 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
     printf("Block Number %d \n",nBestHeight);
 
         if(nBestHeight < YEARLY_BLOCKCOUNT)
-    	    nRewardCoinYear = 6 * COIN_YEAR_REWARD; //60% reward for 1314000 blocks
+    	    nRewardCoinYear = 6 * COIN_YEAR_REWARD; //60% reward for 131400 blocks
     	else if(nBestHeight < (2 * YEARLY_BLOCKCOUNT))
-    	    nRewardCoinYear = 5 * COIN_YEAR_REWARD; //50% reward for 1314000 * 2 blocks
+    	    nRewardCoinYear = 5 * COIN_YEAR_REWARD; //50% reward for 131400 * 2 blocks
     	else if(nBestHeight < (3 * YEARLY_BLOCKCOUNT))
-    	    nRewardCoinYear = 4 * COIN_YEAR_REWARD; //40% reward for 1314000 * 3 blocks
+    	    nRewardCoinYear = 4 * COIN_YEAR_REWARD; //40% reward for 131400 * 3 blocks
     	else if(nBestHeight < (4 * YEARLY_BLOCKCOUNT))
-    	    nRewardCoinYear = 3 * COIN_YEAR_REWARD; //30% reward for 1314000 * 4 blocks
+    	    nRewardCoinYear = 3 * COIN_YEAR_REWARD; //30% reward for 131400 * 4 blocks
     	else if(nBestHeight < (5 * YEARLY_BLOCKCOUNT))
-            nRewardCoinYear = 2 * COIN_YEAR_REWARD; //20% reward for 1314000 * 5 blocks
+            nRewardCoinYear = 2 * COIN_YEAR_REWARD; //20% reward for 131400 * 5 blocks
 
     int64_t nSubsidy = nCoinAge * nRewardCoinYear * 33 / (365 * 33 + 8);
     printf("coin-Subsidy %d\n",nSubsidy);
